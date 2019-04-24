@@ -7,5 +7,7 @@ namespace Sextant.Domain
     {
         public bool CommunicateSkippableSystems { get; set; }
         public string LanguageCode { get; set; }
+
+        public string SourceDataService{ get; set; }
     }
 }

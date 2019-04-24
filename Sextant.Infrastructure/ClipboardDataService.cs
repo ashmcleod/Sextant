@@ -57,7 +57,7 @@ namespace Sextant.Infrastructure
 
                     currentSystem.AddCelestial(string.Join(" ", currentSystem.Name, planet), classification);
                 }
-
+                _logger.Information($"Found {systems.Count.ToString()} systems");
                 return systems;
             }
             catch (Exception ex)

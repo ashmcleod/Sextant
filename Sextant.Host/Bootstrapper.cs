@@ -22,7 +22,7 @@ namespace Sextant.Host
 
         internal void Bootstrap(string basePath, Container container)
         {
-            InitializeSettings(basePath, container);
+            Preferences prefs = InitializeSettings(basePath, container);
 
             container.Register<ILogger, SerilogWrapper>(Lifestyle.Singleton);
 
@@ -32,7 +32,13 @@ namespace Sextant.Host
             container.Register<INavigator, Navigator>(Lifestyle.Singleton);
             container.Register<ICommunicator, VoiceCommunicator>(Lifestyle.Singleton);
 
-            container.Register<IUserDataService, ClipboardDataService>(Lifestyle.Singleton);
+            string sourceDataService = prefs.SourceDataService ?? "edtools";
+            if (sourceDataService == "spansh")
+            {
+                container.Register<IUserDataService, SpanshClipboardDataService>(Lifestyle.Singleton);
+            } else {
+                container.Register<IUserDataService, ClipboardDataService>(Lifestyle.Singleton);
+            }
             container.Register<INavigationRepository, NavigationRepository>(Lifestyle.Singleton);
             container.Register<IPlayerStatus, PlayerStatusRepository>(Lifestyle.Singleton);
 
@@ -49,7 +55,7 @@ namespace Sextant.Host
             container.Verify();
         }
 
-        private void InitializeSettings(string basePath, Container container)
+        private Preferences InitializeSettings(string basePath, Container container)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(basePath)
                                                                          .AddJsonFile("settings.json")
@@ -65,7 +71,9 @@ namespace Sextant.Host
             container.Register(() => configuration.LoadSettings<JournalWatcherSettings>("JournalWatcher"));
             container.Register(() => configuration.LoadSettings<GalaxyMapInteractorSettings>("GalaxyMapInteractor"));
             container.Register(() => configuration.LoadSettings<VoiceCommunicatorSettings>("VoiceCommunicator"), Lifestyle.Singleton);
-            container.Register(() => configuration.LoadSettings<Preferences>("Preferences"), Lifestyle.Singleton);
+            Preferences prefs = configuration.LoadSettings<Preferences>("Preferences");
+            container.Register(() => prefs, Lifestyle.Singleton);
+            return prefs;
         }
 
         private static void RegisterPhrases(Container container, IConfigurationRoot configuration)
