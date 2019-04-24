@@ -6,5 +6,6 @@ namespace Sextant.Domain
     public class Preferences
     {
         public bool CommunicateSkippableSystems { get; set; }
+        public string LanguageCode { get; set; }
     }
 }

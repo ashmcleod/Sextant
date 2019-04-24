@@ -53,9 +53,13 @@ namespace Sextant.Host
         {
             IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(basePath)
                                                                          .AddJsonFile("settings.json")
-                                                                         .AddJsonFile("phrases.json")
                                                                          .Build();
+            string languageCode = configuration.LoadSettings<Preferences>("Preferences").LanguageCode ?? "EN-en";
 
+            configuration = new ConfigurationBuilder().SetBasePath(basePath)
+                                                      .AddJsonFile("settings.json")
+                                                      .AddJsonFile($"phrases/{languageCode}.json")
+                                                      .Build();
             RegisterPhrases(container, configuration);
 
             container.Register(() => configuration.LoadSettings<JournalWatcherSettings>("JournalWatcher"));

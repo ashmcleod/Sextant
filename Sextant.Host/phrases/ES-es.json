@@ -1,0 +1,223 @@
+﻿{
+  "CelestialScan": {
+    "ScanComplete": [
+      "Escaneo completado. ",
+      "Escaneo de superficie completado. ",
+      "Escaneo completo. ",
+      "Escaneo de superficie completo. ",
+      "Escaneo de cuerpo celeste completo. ",
+      "Escaneo de cuerpo celeste completado. ",
+      "Se ha completado el escaneo. "
+    ],
+    "AllScansComplete": [
+      "Se ha finalizado el escaneo del sistema, listo para continuar comandante",
+      "Ese era el último escaneo ha realizar comandante",
+      "Y con eso hemos finalizado este sistema",
+      "Hemos escaneado todos los cuerpos celestes que necesitabamos comandante",
+      "Todos los cuerpos celestes de este sistema han sido escaneados comandante"
+    ],
+    "MultipleScansRemaining": [
+      "{0} escaneos más para finalizar. ",
+      "{0} más para finalizar. ",
+      "Quedan {0}. ",
+      "necesitamos {0} más. ",
+      "quedan {0} escaneos más. "
+    ],
+    "SingleScanRemaining": [
+      "un escaneo más para finalizar. ",
+      "uno más para finalizar. ",
+      "queda uno. ",
+      "necesitamos uno más. ",
+      "queda un único escaneo. "
+    ],
+    "ExpeditionComplete": [
+      "Hemos llegado al detino final comandante. Nuestra expedición ha finalizado.",
+      "Ese era el último escaneo en la expedición. Siempre es el viaje, nunca el destino."
+    ]
+  },
+  "DockSRV": {
+    "Phrases": [
+      "Eso fue divertido",
+      "Está bien estar de vuelta",
+      "Siempre es el viaje, no el destino.",
+      "¿Nos ponemos en marcha comandante?",
+      "Are we heading off commander?",
+      "No todos los que vagan están perdidos",
+      "Bienvenido de nuevo a bordo comandante",
+      "Me pregunto si la nave nos ha echado de menos",
+      "Siempre es el viaje, no el destino",
+      "Hogar dulce hogar"
+    ]
+  },
+  "LaunchSRV": {
+    "Phrases": [
+      "Vamos a dar un paseo",
+      "Hora de estirar las piernas",
+      "Hora de aventuras",
+      "Vamos allá",
+      "Estaba esperando una excursión",
+      "Me pregunto que habrá ahí fuera"
+    ]
+  },
+  "GameLoad": {
+    "Generic": [
+      "Bienvenido de nuevo comandante"
+    ]
+  },
+  "GetNextSystem": {
+    "Phrases": [
+      "El próximo sistema de nuestro viaje es {0}",
+      "{0} es la siguiente parada en nuestro viaje",
+      "Vamos a viajar a {0} a continuación"
+    ]
+  },
+  "FindNextSystem": {
+    "Phrases": [
+      "Buscando el siguiente sistema",
+      "Buscando"
+    ]
+  },
+  "NextScan": {
+    "NextScan": [
+      "El planeta {0} es el siguiente en ser escaneado",
+      "El siguiente planeta en la lista es {0}",
+      "Siguiente parada {0}",
+      "Echemos un vistazo al planeta {0}",
+      "El planeta {0} está deseando ser escaneado",
+      "El planeta {0} es su siguiente parada comandante",
+      "Creo que el siguiente planeta es {0} comandante",
+      "El planeta {0} es el siguiente de la lista",
+      "El planeta {0} necesita ser escaneado",
+      "Siguiente, planeta {0}",
+      "Vayamos al planeta {0}",
+      "Debemos dirigirnos al planeta {0}",
+      "Tantos escaneos, pero taaaan poco tiempo. Dirijámonos ya al planeta {0}"
+    ],
+    "SkipSystem": [
+      "Este sistema no será parte de la expedición",
+      "Este sistema no forma parte de nuestra expedición comandante",
+      "Pasemos de este sistema, no hay escaneos necesarios aquí.",
+      "No necesitamos escaneos en este sistema",
+      "No necesitamos escaneos de superficie en este sistema",
+      "No es necesario realizar escaneos de superficie en este sistema",
+      "No necesitamos escanear ningún cuerpo celeste en este sistema"
+    ],
+    "ScansComplete": [
+      "Hemos terminado de escanear el sistema comandante, sigamos adelante",
+      "No quedan escaneos pendientes en este sistema comandante",
+      "No queda nada por escanear comandante, hemos terminado aquí",
+      "Podemos continuar nuestro viaje comandante, no necestiamos escanear nada más",
+      "Hemos escaneado todos los planetas en este sistema comandante",
+      "Todos los planetas del sistema han sido escaneados comandante"
+    ]
+  },
+  "Initialized": {
+    "Phrases": [
+      "Secuencia de inicio de Sextant completada",
+      "Sextant online",
+      "Sextant inicializado",
+      "Sextant listo para jugar",
+      "Sextant activado"
+    ]
+  },
+  "Progress": {
+    "Progress": [
+      "Hemos estado en el espacio {0} días, {1} horas y {2} minutos. Y llevamos un {3} por ciento del camino",
+      "Llevamos un {3} por ciento del camino.",
+      "We are {3} percent of the way into our journey, y hemos estado en el espacio {0} días, {1} horas y {2} minutos"
+      ],
+    "SystemsScanned": [
+      "Hemos terminado de escanear {0} de {1} sistemas",
+      "Hemos escaneado {0} de un total de {1} sistemas",
+      "En total hemos escaneado {0} de {1} sistemas"
+    ]
+  },
+  "Jump": {
+    "Jumping": [
+      "Saltando a {0}",
+      "Nos dirigimos a {0}",
+      "Curvando el espacio hacia {0}"
+    ],
+    "Skipping": [
+      "Este sistema no es parte de la expedición",
+      "No se necesitan escaneos en este sistema",
+      "No se necesitan escaneos de superfice en este sistema",
+      "No necesitamos escanear ningún cuerpo celeste en este sistema"
+    ],
+    "Scanning": [
+      "Necesitamos escanear {0} cuerpos en este sistema. allí",
+      "{0} planetas requieren de un escaneo en este sistema. allí ",
+      "{0} cuerpos celestes requieren de un escaneo en este sistema. allí ",
+      "este sistema tiene {0} planetas que necesitamos escanear. allí ",
+      "este sistema tiene {0} cuerpos celestes que necesitamos escanear. allí "
+    ],
+    "AlreadyScanned": [
+      "Ya hemos pasado por aquí, no hay nada que escanear",
+      "Ya hemos estado aquí antes, nada que escanear",
+    ],
+    "AndPhrase": "y",
+    "IsPhrase": "es",
+    "ArePhrase": "son",
+    "PluralPhrase": "s"
+  },
+  "ScansRemaining": {
+    "SkipSystem": [
+      "Este sistema no es parte de la expedición",
+      "No se necesitan escaneos en este sistema",
+      "no se necesitan escaneos de superficie en este sistema",
+      "Este sistema no es parte de nuestra expedición comandante",
+      "Sigamos adelante, no necesitamos escaneos aquí"
+    ],
+    "SystemComplete": [
+      "Se ha finalizado el escaneo del sistema, listo para continuar comandante",
+      "Ese era el último escaneo ha realizar comandante",
+      "Y con eso hemos finalizado este sistema",
+      "Hemos escaneado todos los cuerpos celestes que necesitabamos comandante",
+      "Todos los cuerpos celestes de este sistema han sido escaneados comandante"
+      ],
+    "ScansRemaining": [
+      "Quedan {0} planetas por escanear. Son {1}",
+      "Necesitamos escanear {0} planetas más comandante. {1}",
+      "{0} escaneos son necesarios en este sistema. {1}",
+      "{0} más para terminar comandante. Sólo necesitamos {1}"
+    ],
+    "AndPhrase": "y",
+    "PlanetPhrase": "planeta"
+  },
+  "PlotExpedition": {
+    "ExpeditionExists": "Ya tenemos una expedición en curso. Podemos cancelar la expedición actual, o extenderla",
+    "ExpeditionPlotted": "Expedición trazada. La ruta contiene {0} sistemas con {1} planetas. En total, hay ",
+    "UnableToPlot": "Imposible trazar expedición.",
+    "AndPhrase": "y",
+    "PluralPhrase": "s"
+  },
+  "SkipSystem": {
+    "SystemScanned": [
+      "Ignorando este sistema",
+      "Ignorando este sistema, seguimos adelante",
+      "Sistema marcado como escaneado",
+      "Sistema marcado como escaneado, seguimos adelante"
+    ],
+    "Error": "Error marcando sistema como escaneado"
+  },
+  "RescanSystem": {
+    "SystemUnscanned": [
+      "Listo para reescanear sistema, datos de navegación actualizados",
+      "Actualizando datos de navegacion. Cuerpos celestes listos para ser escaneados",
+      "Actualizando datos de navegacion. Sistema listo para ser escaneado"
+    ],
+    "Error": "Error marcando sistema como escaneado"
+  },
+  "CancelExpedition": {
+    "Warning": "Atención!. Cancelar la expedición supondrá la pérdida de todos los datos registrados. Por favor repita el comando para confirmar",
+    "Complete": "Datos de expedición borrados. Listo para trazar una nueva expedición",
+    "Error": "Error borrando datos de expedición"
+  },
+  "Greeting": {
+    "Phrases": [
+      "Hola comandante",
+      "Saludos comandante",
+      "¿Sí comandante?"
+    ]
+  }
+}
